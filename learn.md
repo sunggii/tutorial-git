@@ -4,13 +4,13 @@
 ## Note
 * ถ้าเจอหน้าจอ terminal แบบนี้ 
 
-![alt text](image.png)
+![alt text](./img/git-log.png)
 
 ให้กด ```q ``` ออกมา
 
 * จ้าเจอ terminal แบบนี้ 
 
-![alt text](image-1.png)
+![alt text](./img/image-1.png)
 
 
 กด ``` enter ``` ต่อให้จบ แล้ว ```q ``` ออกมา
@@ -22,4 +22,35 @@
 
 * ```  git log ```  ใช้ทุกครั้งหลัง commit มันจะขึ้นชื่อ/วัน ที่ commit
 
-![alt text](image-2.png)
+![alt text](./img/git-log.png)
+
+## สรุป step การใช้ git คร่าวๆ
+จากโพยอันเก่า 
+```
+echo "# field-from" >> README.md //ไม่ต้องเพราะเราไม่มี README
+git init
+git add README.md // git add . พิมพ์แบบนี้แทน
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sunggii/field-from.git //link จะเจนใหม่ตาม repo ของเรา
+git push -u origin main
+```
+
+### step การใช้ git ต่อจากนี้
+1. ``` git init ``` ใช้หลังจากที่ทำ ver.1 เสร็จ
+2. update งานทุกครั้งที่ทีการเปลี่ยนแปลง (```git add - git commit```  ทำผ่าน UL)
+3. ส่วน git ```branch - git remote``` ทำแบบโพยเก่าไปก่อน **ถ้าโตไปทำงานกับคนอื่นอย่า**  ```branch -M main ```
+
+    ให้ใช้ ```Pull request``` แทน
+4. ``` git push -u origin main``` ตามโพยเก่า เป็นอันจบโค้ดเราก็จะขึ้น github เรียบร้อย
+
+## เคสที่เอาไปใช้จริงได้
+* ```git checkout <commit hash>``` = ย้อนเวลา
+
+![alt text](image.png)
+
+0e79863 คือ commit hash ไป coppy มา
+
+**ตัวอย่างการย้อนเวลา**
+
+```PS D:\git> git checkout 0e79863045617c5e6798d077ca9b08d488ce59df```
