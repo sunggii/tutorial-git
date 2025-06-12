@@ -53,13 +53,10 @@ git remote add origin https://github.com/sunggii/field-from.git //link จะเ
 git push -u origin main
 ```
 
-### step การใช้ git ต่อจากนี้
-1. ``` git init ``` ใช้หลังจากที่ทำ ver.1 เสร็จ
-2. update งานทุกครั้งที่ทีการเปลี่ยนแปลง (```git add - git commit```  ทำผ่าน UL)
-3. ส่วน git ```branch - git remote``` ทำแบบโพยเก่าไปก่อน **ถ้าโตไปทำงานกับคนอื่นอย่า**  ```branch -M main ```
+### step การใช้ git เวลาจะแก้งานแล้วอัพใหม่
+1. update งานทุกครั้งที่ทีการเปลี่ยนแปลง (```git add - git commit```  ทำผ่าน UL)
+4. ``` git push ``` ตามโพยเก่า เป็นอันจบโค้ดเราก็จะขึ้น github เรียบร้อย
 
-    ให้ใช้ ```Pull request``` แทน
-4. ``` git push -u origin main``` ตามโพยเก่า เป็นอันจบโค้ดเราก็จะขึ้น github เรียบร้อย
 
 ## เคสที่เอาไปใช้จริงได้
 * ```git checkout <commit hash>``` = ย้อนเวลา
