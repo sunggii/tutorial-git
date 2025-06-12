@@ -28,7 +28,7 @@
 
     **แต่อย่าหา merge เข้า main มั่วซั่ว**
 
-    #### tip
+    #### tip 
     * ทำงานใน featuer ตัวเองเสร็จก็ push ใน branch ตัวเอง
     * มันจะกลายเป็นการทำ **Merge pull request** ให้หัวหนเาเราไป merge เข้า main เอง
 
